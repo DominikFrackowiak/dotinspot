@@ -1,0 +1,75 @@
+div.wrapper {
+ width: 992px;
+}
+
+header {
+ width: 900px;
+ height: 99px;
+}
+
+a.logo {
+ /* padding-top: 20px; */
+ width: 80px;
+}
+
+div.hello,
+div.social-mail-wrapper {
+ height: 100%;
+}
+
+h3 {
+ font-size: 21px;
+}
+
+div.social-wrapper-top img {
+ width: 23px;
+ margin-right: 29px;
+}
+
+/* VIDEO */
+.aside-info {
+ width: 46px;
+}
+
+div.video-wrapper {
+ width: 900px;
+}
+
+.p-wrapper {
+ height: 46px;
+ width: 506px;
+}
+
+.p-wrapper-left {
+ transform: rotate(90deg);
+ transform-origin: 23px 23px;
+}
+
+.p-wrapper-right {
+ transform: rotate(90deg);
+ transform-origin: 23px 23px;
+}
+
+/* ILLUSTRATION & MOTION */
+div.illustration-motion-wrapper {
+ height: 74px;
+ width: 900px;
+}
+
+.illustration-wrapper,
+.motion-wrapper {
+ width: 439px;
+}
+
+
+/* I'M MARCIN DESCRIPTION */
+.description-wrapper {
+ margin-top: 25px;
+ height: 114px;
+ width: 900px;
+}
+
+footer {
+ font-size: 22px;
+ font-weight: 500;
+}

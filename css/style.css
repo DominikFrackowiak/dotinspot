@@ -1,0 +1,380 @@
+@font-face {
+  font-family: "Brendon Grotesque";
+  src: url("../Brandon_Grotesque/Brandon_bld.otf"),
+    url("../Brandon_Grotesque/Brandon_reg.otf"),
+    url("../Brandon_Grotesque/Brandon_med.otf");
+}
+
+/* normal/regular, medium 500, bold 700 */
+
+:root {
+  --turkus: #00FFDA;
+  --czerwony: #FF3333;
+  --niebieski: #0000FF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  cursor: pointer;
+}
+
+/* B O D Y  +  W R A P P E R */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  font-family: "Brendon Grotesque";
+  overflow-x: hidden;
+}
+
+div.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 342px;
+  /* padding: 0 9px; */
+}
+
+/* H E A D E R */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 88px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* LOGO */
+a.logo {
+  width: 104px;
+  height: 100%;
+  cursor: pointer;
+}
+
+img.img-logo {
+  transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  cursor: pointer;
+}
+
+img.img-logo:hover {
+  animation: scaleElement 0.3s 1;
+}
+
+/* HEADER R I G H T S I D E */
+div.header-right-side {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  height: 100%;
+  min-width: 241px;
+  flex: 1;
+  text-align: right;
+}
+
+div.social-wrapper-top {
+  display: none;
+}
+
+div.hello {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 50%;
+  width: 100%;
+}
+
+div.hello h3 {
+  font-size: 14px;
+  color: var(--czerwony);
+  font-weight: regular;
+}
+
+div.social-mail-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  height: 50%;
+  width: 100%;
+}
+
+div.mail-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+a.envelope {
+  margin-right: 8px;
+  width: 23px;
+  height: 16px;
+}
+
+a.envelope.top {
+  position: relative;
+}
+
+img.envelope.top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: .7s;
+  opacity: 1;
+}
+
+.envelope.red {
+  opacity: 0;
+}
+
+div.mail-wrapper a {
+  font-size: 18px;
+  color: var(--niebieski);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.7s;
+  cursor: pointer;
+}
+
+a.mail:hover {
+  color: var(--czerwony);
+}
+
+/* A S I D E  + V I D E O */
+
+.aside-video-wrapper {
+  display: flex;
+  position: relative;
+  /* width: 342px; */
+  width: 100%;
+  height: auto;
+}
+
+.aside-info {
+  display: none;
+  color: var(--czerwony);
+  font-size: 12px;
+  font-weight: regular;
+}
+
+div.video-wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+/* M O T I O N   G R A P H I C && I L L U S T R A T I O N */
+
+div.illustration-motion-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 162px;
+}
+
+.illustration-wrapper,
+.motion-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 81px;
+  width: 307px;
+  border-bottom: 7px solid var(--czerwony);
+  text-decoration: none;
+  color: black;
+  transition: .7s;
+}
+
+.motion-wrapper {
+  border-color: var(--turkus);
+}
+
+.illustration-wrapper:hover,
+.motion-wrapper:hover {
+  border-color: var(--niebieski);
+}
+
+.motion-icon,
+.illustration-icon {
+  position: relative;
+  width: 40px;
+  height: auto;
+  margin-right: 11px;
+}
+
+.illustration-wrapper h2,
+.motion-wrapper h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.illustration-wrapper:hover h2,
+.motion-wrapper:hover h2 {
+  transform: scale(1.1);
+  margin-left: 10px;
+}
+
+/* S O C I A L  M E D I A DOWN */
+
+.social-wrapper-two {
+  display: flex;
+  justify-content: space-around;
+  height: 66px;
+  width: 100%;
+}
+
+.social-wrapper-inside {
+  position: relative;
+  height: 100%;
+  width: 30%;
+}
+
+.insta-icon,
+.vimeo-icon,
+.behance-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 33px;
+  height: auto;
+  opacity: 1;
+  transition: .7s;
+}
+
+.insta-icon.red,
+.vimeo-icon.red,
+.behance-icon.red {
+  opacity: 0;
+}
+
+/* I'M   M A R C I N   D E S C R I P T I O N*/
+
+.description-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 307px;
+  height: 113px;
+}
+
+.head.description {
+  display: none;
+}
+
+.description-txt-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.description-header {
+  width: 100%;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+p.description.s,
+p.description.m {
+  display: none;
+}
+
+p.description.xs {
+  display: block;
+  width: 278px;
+  height: 68px;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+/* F O O T E R */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 94px;
+  width: 307px;
+  font-size: 18px;
+  font-weight: medium;
+}
+
+img.head {
+  height: 60px;
+  width: auto;
+  margin-right: 11px;
+}
+
+.mail-wrapper.down {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 180px;
+}
+
+a.envelope.down {
+  position: relative;
+  /* margin-top: 5px; */
+}
+
+img.envelope.down {
+  position: absolute;
+  width: 21px;
+  height: auto;
+  top: 0;
+  left: 0;
+  transition: .7s;
+}
+
+.copyright {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* K E Y F R A M E S */
+
+/* @keyframes scaleElement {
+  0% {
+    transform: scale(0)
+  }
+
+  33% {
+    transform: scale(-25%)
+  }
+
+  66% {
+    transform: scale(+25%)
+  }
+
+  100% {
+    transform: scale(0)
+  }
+} */
